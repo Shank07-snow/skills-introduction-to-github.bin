@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alex Nova · AI Engineer Portfolio</title>
+  <meta name="description" content="AI Engineer portfolio — machine learning, generative AI, and 3D interactive experiences." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ── 3D Canvas Background ── -->
+<canvas id="bg-canvas"></canvas>
+
+<!-- ── Navigation ── -->
+<nav>
+  <span class="nav-logo">&lt;AlexNova /&gt;</span>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+
+  <!-- ── Hero ── -->
+  <section id="hero">
+    <p class="hero-eyebrow fade-in">👋 Hello, I'm</p>
+    <h1 class="hero-title fade-in">
+      Alex Nova<br/>
+      <span class="highlight">AI Engineer</span>
+    </h1>
+    <p class="hero-subtitle fade-in">
+      I build intelligent systems that understand language, see the world, and reason at scale —
+      from research prototypes to production ML pipelines.
+    </p>
+    <div class="hero-cta fade-in">
+      <a href="#projects" class="btn btn-primary">View Projects</a>
+      <a href="#contact" class="btn btn-outline">Get in Touch</a>
+    </div>
+    <div class="scroll-hint fade-in">
+      <span class="line"></span>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- ── About ── -->
+  <section id="about">
+    <p class="section-tag fade-in">Who I Am</p>
+    <h2 class="section-title fade-in">Building Minds, One Model at a Time</h2>
+
+    <div class="about-grid">
+      <div class="about-text fade-in">
+        <p>
+          I'm an AI Engineer with 6+ years of experience designing and deploying machine-learning
+          solutions across NLP, computer vision, and reinforcement learning.
+        </p>
+        <p>
+          My work spans academic research and fast-paced product teams. I care deeply about model
+          reliability, interpretability, and the human impact of the systems I build.
+        </p>
+        <p>
+          Outside of code I mentor aspiring ML engineers, contribute to open-source, and chase
+          state-of-the-art benchmarks just for fun.
+        </p>
+      </div>
+
+      <div class="about-stats fade-in">
+        <div class="stat-card">
+          <div class="stat-number">6+</div>
+          <div class="stat-label">Years of Experience</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">30+</div>
+          <div class="stat-label">ML Models Shipped</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">12</div>
+          <div class="stat-label">Research Papers</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">3k+</div>
+          <div class="stat-label">GitHub Stars</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Skills ── -->
+  <section id="skills">
+    <p class="section-tag fade-in">Expertise</p>
+    <h2 class="section-title fade-in">Core Competencies</h2>
+    <p class="section-desc fade-in">
+      End-to-end ML engineering — from data pipelines and model architecture to deployment and monitoring.
+    </p>
+
+    <div class="skills-grid">
+
+      <div class="skill-card fade-in">
+        <div class="skill-icon">🧠</div>
+        <div class="skill-name">Large Language Models</div>
+        <div class="skill-desc">GPT-4, LLaMA, Mistral, RAG pipelines, fine-tuning, RLHF</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" data-width="95%"></div></div>
+      </div>
+
+      <div class="skill-card fade-in">
+        <div class="skill-icon">👁️</div>
+        <div class="skill-name">Computer Vision</div>
+        <div class="skill-desc">YOLO, Segment Anything, diffusion models, medical imaging</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" data-width="90%"></div></div>
+      </div>
+
+      <div class="skill-card fade-in">
+        <div class="skill-icon">🔁</div>
+        <div class="skill-name">MLOps & Infrastructure</div>
+        <div class="skill-desc">MLflow, Kubeflow, Ray, Triton, AWS SageMaker, GCP Vertex AI</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" data-width="88%"></div></div>
+      </div>
+
+      <div class="skill-card fade-in">
+        <div class="skill-icon">📊</div>
+        <div class="skill-name">Data Engineering</div>
+        <div class="skill-desc">Spark, dbt, Airflow, streaming pipelines, feature stores</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" data-width="85%"></div></div>
+      </div>
+
+      <div class="skill-card fade-in">
+        <div class="skill-icon">🐍</div>
+        <div class="skill-name">Python & Frameworks</div>
+        <div class="skill-desc">PyTorch, TensorFlow, JAX, HuggingFace, LangChain, FastAPI</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" data-width="97%"></div></div>
+      </div>
+
+      <div class="skill-card fade-in">
+        <div class="skill-icon">🎲</div>
+        <div class="skill-name">Reinforcement Learning</div>
+        <div class="skill-desc">PPO, DQN, multi-agent systems, OpenAI Gym, robotics sim</div>
+        <div class="skill-bar-wrap"><div class="skill-bar" data-width="78%"></div></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Projects ── -->
+  <section id="projects">
+    <p class="section-tag fade-in">Work</p>
+    <h2 class="section-title fade-in">Featured Projects</h2>
+    <p class="section-desc fade-in">
+      A selection of ML systems I've designed, trained, and shipped.
+    </p>
+
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <div class="project-card fade-in">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#050a14,#0a1f33)">
+          <canvas data-shape="sphere"></canvas>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">LLM</span>
+            <span class="tag">RAG</span>
+            <span class="tag">Python</span>
+          </div>
+          <h3 class="project-title">DocuMind — Enterprise RAG System</h3>
+          <p class="project-desc">
+            A production-ready retrieval-augmented generation pipeline over 50 M+ internal documents.
+            Reduced analyst research time by 65% with 94% answer accuracy.
+          </p>
+          <div class="project-links">
+            <a href="#" aria-label="GitHub repository">⬡ GitHub</a>
+            <a href="#" aria-label="Live demo">↗ Live Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card fade-in">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#0d0514,#1a0d2e)">
+          <canvas data-shape="torus"></canvas>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">Diffusion</span>
+            <span class="tag">PyTorch</span>
+            <span class="tag">CUDA</span>
+          </div>
+          <h3 class="project-title">PixelForge — Medical Image Synthesis</h3>
+          <p class="project-desc">
+            Conditional latent diffusion model generating synthetic MRI scans to augment rare-disease
+            datasets. Published at MICCAI 2024.
+          </p>
+          <div class="project-links">
+            <a href="#" aria-label="GitHub repository">⬡ GitHub</a>
+            <a href="#" aria-label="Paper">↗ Paper</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card fade-in">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#051414,#0a2a2a)">
+          <canvas data-shape="box"></canvas>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">RL</span>
+            <span class="tag">Robotics</span>
+            <span class="tag">Sim2Real</span>
+          </div>
+          <h3 class="project-title">ManipuBot — Dexterous Robotic Manipulation</h3>
+          <p class="project-desc">
+            PPO-based policy trained in Isaac Gym achieving 87% success rate on real-world pick-and-place
+            tasks after sim-to-real transfer.
+          </p>
+          <div class="project-links">
+            <a href="#" aria-label="GitHub repository">⬡ GitHub</a>
+            <a href="#" aria-label="Demo video">↗ Video</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-card fade-in">
+        <div class="project-thumb" style="background:linear-gradient(135deg,#140a05,#2a1a0a)">
+          <canvas data-shape="sphere"></canvas>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">MLOps</span>
+            <span class="tag">Kubernetes</span>
+            <span class="tag">Triton</span>
+          </div>
+          <h3 class="project-title">InferenceHub — Low-Latency Serving Platform</h3>
+          <p class="project-desc">
+            Multi-model serving infrastructure handling 10k req/s with p99 latency &lt; 30 ms,
+            supporting A/B testing and automated rollbacks.
+          </p>
+          <div class="project-links">
+            <a href="#" aria-label="GitHub repository">⬡ GitHub</a>
+            <a href="#" aria-label="Blog post">↗ Blog</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Experience ── -->
+  <section id="experience">
+    <p class="section-tag fade-in">Journey</p>
+    <h2 class="section-title fade-in">Experience</h2>
+    <p class="section-desc fade-in">Building AI at scale across research labs and product companies.</p>
+
+    <div class="timeline">
+
+      <div class="timeline-item fade-in">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2023 – Present</div>
+        <div class="timeline-role">Senior AI Engineer</div>
+        <div class="timeline-company">Anthropic · San Francisco, CA</div>
+        <div class="timeline-desc">
+          Leading LLM safety fine-tuning initiatives, RLHF pipelines, and evaluation frameworks
+          for Claude. Reduced harmful outputs by 40% without degrading helpfulness benchmarks.
+        </div>
+      </div>
+
+      <div class="timeline-item fade-in">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2021 – 2023</div>
+        <div class="timeline-role">ML Engineer II</div>
+        <div class="timeline-company">Google DeepMind · London, UK</div>
+        <div class="timeline-desc">
+          Contributed to Gemini's multimodal pre-training pipeline, optimized data ingestion for
+          1T+ token datasets, and co-authored 4 internal research papers.
+        </div>
+      </div>
+
+      <div class="timeline-item fade-in">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2019 – 2021</div>
+        <div class="timeline-role">AI Research Engineer</div>
+        <div class="timeline-company">OpenAI · San Francisco, CA</div>
+        <div class="timeline-desc">
+          Worked on GPT-3 inference optimization and early DALL-E research, achieving 3× throughput
+          improvement using custom CUDA kernels and quantization strategies.
+        </div>
+      </div>
+
+      <div class="timeline-item fade-in">
+        <div class="timeline-dot"></div>
+        <div class="timeline-date">2017 – 2019</div>
+        <div class="timeline-role">Data Scientist</div>
+        <div class="timeline-company">Palantir Technologies · New York, NY</div>
+        <div class="timeline-desc">
+          Built NLP pipelines for large-scale document classification and anomaly detection
+          across government and financial-sector clients.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Contact ── -->
+  <section id="contact">
+    <p class="section-tag fade-in">Let's Connect</p>
+    <h2 class="section-title fade-in">Get in Touch</h2>
+    <p class="section-desc fade-in" style="margin: 0 auto 0; text-align:center;">
+      Open to research collaborations, speaking engagements, and senior IC / staff roles.
+    </p>
+
+    <div class="contact-links fade-in">
+      <a href="mailto:alex@example.com" class="contact-link">
+        ✉️ alex@example.com
+      </a>
+      <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="contact-link">
+        ⬡ GitHub
+      </a>
+      <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="contact-link">
+        🔗 LinkedIn
+      </a>
+      <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="contact-link">
+        🐦 Twitter / X
+      </a>
+      <a href="https://scholar.google.com/" target="_blank" rel="noopener noreferrer" class="contact-link">
+        📄 Google Scholar
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <span>© 2026 Alex Nova · Built with Three.js &amp; vanilla JS</span>
+</footer>
+
+<!-- Three.js module -->
+<script type="module" src="main.js"></script>
+
+</body>
+</html>
